@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spo12h.Progr2.Sessions.Jona
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spo12h.Progr2.Exercise2.Jonathan", "Spo12h.Progr2.Exercise2.Jonathan\Spo12h.Progr2.Exercise2.Jonathan.csproj", "{721EFBDE-EB11-44F1-8B16-3BE9C5FC5E2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spo12h.Progr2.Exercises.Documents", "Spo12h.Progr2.Exercises.Documents\Spo12h.Progr2.Exercises.Documents.csproj", "{5A9F9A70-6262-49DF-BB0C-D20A72BEC236}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{721EFBDE-EB11-44F1-8B16-3BE9C5FC5E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{721EFBDE-EB11-44F1-8B16-3BE9C5FC5E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{721EFBDE-EB11-44F1-8B16-3BE9C5FC5E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A9F9A70-6262-49DF-BB0C-D20A72BEC236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A9F9A70-6262-49DF-BB0C-D20A72BEC236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A9F9A70-6262-49DF-BB0C-D20A72BEC236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A9F9A70-6262-49DF-BB0C-D20A72BEC236}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
