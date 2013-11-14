@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spo12h.Progr2.Exercise5", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spo12h.Progr2.Slask", "Spo12h.Progr2.Slask\Spo12h.Progr2.Slask.csproj", "{249CB6E1-D325-49A0-8860-9B5797467CBC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spo12h.Progr2.Exercise6", "Spo12h.Progr2.Exercise6\Spo12h.Progr2.Exercise6.csproj", "{FBEE6B3F-4B1A-48A3-8005-1627FB655CCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{249CB6E1-D325-49A0-8860-9B5797467CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{249CB6E1-D325-49A0-8860-9B5797467CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{249CB6E1-D325-49A0-8860-9B5797467CBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBEE6B3F-4B1A-48A3-8005-1627FB655CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBEE6B3F-4B1A-48A3-8005-1627FB655CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBEE6B3F-4B1A-48A3-8005-1627FB655CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBEE6B3F-4B1A-48A3-8005-1627FB655CCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
