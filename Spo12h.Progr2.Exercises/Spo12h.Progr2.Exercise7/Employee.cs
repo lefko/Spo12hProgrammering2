@@ -31,5 +31,11 @@ namespace Spo12h.Progr2.Exercise7
                 return string.Format("{0} {1}", FirstName, LastName);
             }
         }
+
+        public override string ToString()
+        {
+            //string output = new StringBuilder();
+            return base.ToString();
+        }
     }
 }

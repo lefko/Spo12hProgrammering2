@@ -16,9 +16,9 @@ namespace Spo12h.Progr2.Exercise7
         {
             var catalog = new EmployeeCatalog(new Logger());
 
-            var choice = 0;
+            string choice = "0";
 
-            while (choice != 4)
+            while (choice != "4")
             {
                 PrintMenu();
                 choice = CollectUsersChoice(catalog);
@@ -50,7 +50,7 @@ namespace Spo12h.Progr2.Exercise7
         }
         private static void PrintMenu()
         {
-            Console.WriteLine("Select an option");
+            Console.WriteLine("\nSelect an option");
             Console.WriteLine("----------------\n");
             Console.WriteLine("1) Add employee");
             Console.WriteLine("2) Remove employee");
@@ -60,33 +60,66 @@ namespace Spo12h.Progr2.Exercise7
         #endregion
 
         #region //User Input Methods
-        private static int CollectUsersChoice(EmployeeCatalog catalog)
+        private static string CollectUsersChoice(EmployeeCatalog catalog)
         {
             Console.Write("Your choice: ");
-            var input = int.Parse(Console.ReadLine());
+            var input = Console.ReadLine();
             switch (input)
             {
-                case 1:
-                    Employee newEmployee = GetInput();
-                    bool isSuccess = catalog.AddEmployee(newEmployee); 
-                    if(isSuccess)
-                        Console.WriteLine("Employee Added!");
-                    else
-                        Console.WriteLine("Employee already exists!");
-                     
-                    
+                case "1":
+                    AddEmployee(catalog); 
                     break;
-                case 2: 
+                case "2": 
+                    RemoveEmployee(catalog);
                     break;
-                case 3: 
-                    
+                case "3": 
+                    PrintEntireRegistry(catalog);
                     break;
-                case 4: Console.WriteLine("Bye!");
+                case "4": Console.WriteLine("Bye!");
                     break;
                 default: Console.WriteLine("Bad choice, try again!");
                     break;
             }
             return input;
+        }
+
+        private static void AddEmployee(EmployeeCatalog catalog)
+        {
+             Employee newEmployee = GetInput();
+             bool isSuccess = catalog.AddEmployee(newEmployee);
+             DisplayAddEmployeeResultMessage(isSuccess);     
+        }
+
+        private static void RemoveEmployee(EmployeeCatalog catalog)
+        {
+            string socSecNrForRemove = GetInputForRemove();
+            bool isSuccess = catalog.RemoveEmployee(socSecNrForRemove);
+            DisplayRemoveEmployeeResultMessage(isSuccess);
+        }
+
+        private static void DisplayAddEmployeeResultMessage(bool isSuccess)
+        {
+            if (isSuccess)
+                Console.WriteLine("\nEmployee successfully Added!");
+            else
+                Console.WriteLine("\nEmployee already exists!");
+        }
+
+        private static void DisplayRemoveEmployeeResultMessage(bool isSuccess)
+        {
+            if (isSuccess)
+                Console.WriteLine("\nEmployee successfully Removed!");
+            else
+                Console.WriteLine("\nEmployee doesn't exist!");
+        }
+
+        private static void PrintEntireRegistry(EmployeeCatalog catalog)
+        {
+            List<Employee> allEmployees = catalog.GetAllEmployees();
+            foreach (Employee Employee in allEmployees)
+            {
+                Console.WriteLine(Employee.ToString());
+            }
         }
 
         private static Employee GetInput()
@@ -103,6 +136,13 @@ namespace Spo12h.Progr2.Exercise7
 
 
             return newEmployee;
+        }
+
+        private static string GetInputForRemove()
+        {
+            Console.Write("\nSocial Security Number: ");
+            string socialSecurityNumber = GetSocialSecurityNumber();
+            return socialSecurityNumber;
         }
 
         private static string GetFirstName()
