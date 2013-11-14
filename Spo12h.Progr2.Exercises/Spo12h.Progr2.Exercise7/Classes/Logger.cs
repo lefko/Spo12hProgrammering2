@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Spo12h.Progr2.Exercise7
 {
-    class Logger
+    class Logger : ILog
     {
         private List<string> loggEntries = new List<string>();
 
@@ -14,10 +14,13 @@ namespace Spo12h.Progr2.Exercise7
             return loggEntries;
         }
 
-        public void AddLoggEntry(string loggDetails)
+
+
+        public void AddToLog(string msg)
         {
-            string loggToAdd = string.Format("{0} {1}", DateTime.Now, loggDetails);
+            string loggToAdd = string.Format("{0} {1}", DateTime.Now, msg);
             loggEntries.Add(loggToAdd);
         }
+
     }
 }

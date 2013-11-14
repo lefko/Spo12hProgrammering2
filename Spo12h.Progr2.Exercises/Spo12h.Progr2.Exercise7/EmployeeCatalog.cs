@@ -7,17 +7,26 @@ using System.Threading.Tasks;
 namespace Spo12h.Progr2.Exercise7
 {
     class EmployeeCatalog
+
     {
         List<Employee> employees = new List<Employee>();
+        private readonly ILog logger;
 
-        public bool AddEmployee(string fName, string lName, string socSecNr)
+        public EmployeeCatalog(ILog log)
         {
-            // TODO: implement method
-            Employee foundEmployee = FindEmployee(socSecNr);
+            logger = log;
+            logger.AddToLog("New log created");
+        }
+        
+        
+
+        public bool AddEmployee(Employee newEmployee)
+        {
+            Employee foundEmployee = FindEmployee(newEmployee.SocialSecurityNumber);
 
             if (foundEmployee == null)
             {
-                Employee employeeToAdd = new Employee(fName, lName, socSecNr);
+                Employee employeeToAdd = new Employee(newEmployee.FirstName, newEmployee.LastName, newEmployee.SocialSecurityNumber);
                 employees.Add(employeeToAdd);
                 return true;
             }

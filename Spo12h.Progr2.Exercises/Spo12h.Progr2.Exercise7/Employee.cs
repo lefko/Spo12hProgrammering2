@@ -19,6 +19,11 @@ namespace Spo12h.Progr2.Exercise7
             this.SocialSecurityNumber = socSecNr;
         }
 
+        public Employee()
+        {
+            
+        }
+
         public string FullName
         {
             get
