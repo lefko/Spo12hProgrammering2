@@ -26,18 +26,9 @@ namespace Spo12h.Progr2.Exercise7
 
             }
 
-
-
-
             string fNameOfEmployeeToAdd = Console.ReadLine();
             string lNameOfEmployeToAdd = Console.ReadLine();
             string socSecOfEmployeeToAdd = Console.ReadLine();
-            
-            
-
-
-
-
 
         }
 
