@@ -40,7 +40,7 @@ namespace Spo12h.Progr2.Exercise7
 
             if (foundEmployee != null)
             {
-                    employees.Remove(foundEmployee);
+                employees.Remove(foundEmployee);
                 return true;
             }
 
