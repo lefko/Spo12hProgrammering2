@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Spo12h.Progr2.Exercise7
+namespace Spo12h.Progr2.Exercise10
 {
     class Logger : ILog
     {
