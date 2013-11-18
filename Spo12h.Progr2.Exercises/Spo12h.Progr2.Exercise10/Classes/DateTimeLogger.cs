@@ -9,21 +9,20 @@ namespace Spo12h.Progr2.Exercise10.Classes
 {
     class DateTimeLogger : ILogger
     {
-        private List<string> log;
-        public List<string> LogPosts {
-            get { return log; }
-            set { log = value; }
-        }
+        
+        public List<string> LogPosts { get; private set; }
+
 
         public DateTimeLogger()
         {
-           this.log = new List<string>();
+            this.LogPosts = new List<string>();
         }
+
         
         public void Log(string msg)
         {
             string logPost = string.Format("{0} {1}", DateTime.UtcNow, msg);
-            log.Add(logPost);
+            LogPosts.Add(logPost);
         }
     }
 }
