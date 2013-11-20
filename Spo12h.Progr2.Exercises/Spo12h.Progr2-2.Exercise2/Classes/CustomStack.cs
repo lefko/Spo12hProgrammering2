@@ -18,7 +18,6 @@ namespace Spo12h.Progr2_2.Exercise2.Classes
         public T Peek()
         {
             return myList.Last();
-
         }
 
         public T Pop()

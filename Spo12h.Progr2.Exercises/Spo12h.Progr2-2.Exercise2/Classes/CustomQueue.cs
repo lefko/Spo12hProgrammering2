@@ -20,7 +20,7 @@ namespace Spo12h.Progr2_2.Exercise2.Classes
             return myQueue.First();
         }
 
-        public T Dequeue()
+        public T DequeueFront()
         {
             var myItem = myQueue.First();
             myQueue.RemoveAt(0);
@@ -28,9 +28,22 @@ namespace Spo12h.Progr2_2.Exercise2.Classes
             return myItem;
         }
 
-        public void Enqueue(T item)
+        public T DequeueBack()
+        {
+            var myItem = myQueue.Last();
+            myQueue.Remove(myItem);
+
+            return myItem;
+        }
+
+        public void EnqueueBack(T item)
         {
             myQueue.Add(item);
+        }
+
+        public void EnqueueFront(T item)
+        {
+            myQueue.Insert(0, item);
         }
     }
 }
