@@ -34,24 +34,24 @@ namespace Spo12h.Progr2_2.Exercise2
 
                 //See if the int queue is working
                 Console.Write("Peek the int Quee: ");
-                Console.WriteLine(intQueue.Peak());
+                Console.WriteLine(intQueue.Front());
 
                 Console.Write("Deque first from int Queue: ");
                 Console.WriteLine(intQueue.DequeueFront());
 
                 // See if string qeue is working
                 Console.Write("Peek the int Quee: ");
-                Console.WriteLine(intQueue.Peak());
+                Console.WriteLine(intQueue.Front());
 
                 Console.Write("Peek the str Quee: ");
-                Console.WriteLine(strQueue.Peak());
+                Console.WriteLine(strQueue.Front());
 
                 Console.Write("Deque first from str Queue: ");
                 Console.WriteLine(strQueue.DequeueFront());
 
 
                 Console.Write("Peek the str Quee: ");
-                Console.WriteLine(strQueue.Peak());
+                Console.WriteLine(strQueue.Front());
 
 
                 //// CODE FOR cUSTOMsTACK class

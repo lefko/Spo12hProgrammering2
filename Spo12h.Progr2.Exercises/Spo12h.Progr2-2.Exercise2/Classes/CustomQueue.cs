@@ -15,9 +15,14 @@ namespace Spo12h.Progr2_2.Exercise2.Classes
             myQueue = new List<T>();
         }
 
-        public T Peak()
+        public T Front()
         {
             return myQueue.First();
+        }
+
+        public T Back()
+        {
+            return myQueue.Last();
         }
 
         public T DequeueFront()
