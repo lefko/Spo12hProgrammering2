@@ -131,6 +131,8 @@ namespace Spo12g.Progr2_2.Exercise.Dictionaries
             letterOccurence.Add('ö', "");   
         }
 
+        
+
         //static void CountLetters(<Dictionary<char, string> letterOccurence)
     }
 
