@@ -10,74 +10,35 @@ namespace Spo12g.Progr2_2.Exercise.Dictionaries
 {
     class Program
     {
+        static Dictionary<char, string> letterOccurence = new Dictionary<char, string>();
+  
         static void Main(string[] args)
         {
-            Application();
+            Application(letterOccurence);
 
             Console.ReadLine();
 
         }
 
 
-        private static void Application()
+        private static void Application(Dictionary<char, string> letterOccurence)
         {
-            var letterOccurrence = new Dictionary<char, string>();
+            // var letterOccurrence = new Dictionary<char, string>();
+            DrawApplication();
 
-            
-
-            // Adds the swedish alfabet to the Dictionary
-            //letterOccurrence.Add('a', "");
-            //letterOccurrence.Add('b', "");
-            //letterOccurrence.Add('c', "");
-            //letterOccurrence.Add('d', "");
-            //letterOccurrence.Add('e', "");
-            //letterOccurrence.Add('f', "");
-            //letterOccurrence.Add('g', "");
-            //letterOccurrence.Add('h', "");
-            //letterOccurrence.Add('i', "");
-            //letterOccurrence.Add('j', "");
-            //letterOccurrence.Add('k', "");
-            //letterOccurrence.Add('l', "");
-            //letterOccurrence.Add('m', "");
-            //letterOccurrence.Add('n', "");
-            //letterOccurrence.Add('o', "");
-            //letterOccurrence.Add('p', "");
-            //letterOccurrence.Add('q', "");
-            //letterOccurrence.Add('r', "");
-            //letterOccurrence.Add('s', "");
-            //letterOccurrence.Add('t', "");
-            //letterOccurrence.Add('u', "");
-            //letterOccurrence.Add('v', "");
-            //letterOccurrence.Add('x', "");
-            //letterOccurrence.Add('y', "");
-            //letterOccurrence.Add('z', "");
-            //letterOccurrence.Add('å', "");
-            //letterOccurrence.Add('ä', "");
-            //letterOccurrence.Add('ö', "");
-            
             string input = getInput();
-            input = input.ToLower();
+            input.ToLower();
 
-            foreach (char c in input)
-            {
-                if (!letterOccurrence.ContainsKey(c))
-                    letterOccurrence.Add(c, "");
-       
-            }
+            // Add all the string characters to Dictionary
+            AddInputCahrsToDictionary(input, letterOccurence);
+            
+            // Add only the swedish alfabet to dictionary
+            // AddSwedishAlfabetToDictionary(letterOccurence);
 
-            foreach (char c in input)
-            {
-                if (letterOccurrence.ContainsKey(c))
-                {
-                    string value = "";
-                    value = letterOccurrence[c];
-                    value = value + "*";
-     
-                    letterOccurrence[c] = value;
-                }
-            }
+            
+           
 
-            foreach (var pair in letterOccurrence)
+            foreach (var pair in letterOccurence)
             {
                 if (pair.Value != "")
                 {
@@ -90,11 +51,7 @@ namespace Spo12g.Progr2_2.Exercise.Dictionaries
 
                         //if(letterOccurrence.ContainsKey(char.IsWhiteSpace(pair.Key))
                 }
-
-                    
             }
-            
-
         }
     
         private static void DrawApplication()
@@ -118,6 +75,63 @@ namespace Spo12g.Progr2_2.Exercise.Dictionaries
         //    if(dic.ContainsKey(char))
         //        dic.
         //}
+
+        static void AddInputCahrsToDictionary(string input, Dictionary<char, string> letterOccurence )
+        {
+            foreach (char c in input)
+            {
+                if (!letterOccurence.ContainsKey(c))
+                    letterOccurence.Add(c, "");
+
+            }
+
+            foreach (char c in input)
+            {
+                if (letterOccurence.ContainsKey(c))
+                {
+                    //string value = "";
+                    string value = letterOccurence[c];
+                    value = value + "*";
+
+                    letterOccurence[c] = value;
+                }
+            }  
+        }
+
+        static void AddSwedishAlfabetToDictionary(Dictionary<char, string> letterOccurence)
+        {
+            // Adds the swedish alfabet to the Dictionary
+            letterOccurence.Add('a', "");
+            letterOccurence.Add('b', "");
+            letterOccurence.Add('c', "");
+            letterOccurence.Add('d', "");
+            letterOccurence.Add('e', "");
+            letterOccurence.Add('f', "");
+            letterOccurence.Add('g', "");
+            letterOccurence.Add('h', "");
+            letterOccurence.Add('i', "");
+            letterOccurence.Add('j', "");
+            letterOccurence.Add('k', "");
+            letterOccurence.Add('l', "");
+            letterOccurence.Add('m', "");
+            letterOccurence.Add('n', "");
+            letterOccurence.Add('o', "");
+            letterOccurence.Add('p', "");
+            letterOccurence.Add('q', "");
+            letterOccurence.Add('r', "");
+            letterOccurence.Add('s', "");
+            letterOccurence.Add('t', "");
+            letterOccurence.Add('u', "");
+            letterOccurence.Add('v', "");
+            letterOccurence.Add('x', "");
+            letterOccurence.Add('y', "");
+            letterOccurence.Add('z', "");
+            letterOccurence.Add('å', "");
+            letterOccurence.Add('ä', "");
+            letterOccurence.Add('ö', "");   
+        }
+
+        //static void CountLetters(<Dictionary<char, string> letterOccurence)
     }
 
 
