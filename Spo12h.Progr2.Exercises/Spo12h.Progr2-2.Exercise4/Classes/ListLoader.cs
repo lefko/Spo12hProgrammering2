@@ -28,7 +28,7 @@ namespace Spo12h.Progr2_2.Exercise4.Classes
                 int releaseYear = int.Parse(strings[1]);
                 list.Add(new LanguageData(strings[0], releaseYear, strings[2]));
 
-                Console.WriteLine(line);
+                // Console.WriteLine(line); // to show the file read results
             }
 
         }

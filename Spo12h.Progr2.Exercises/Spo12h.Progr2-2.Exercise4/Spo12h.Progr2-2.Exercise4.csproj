@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Classes\LanguageData.cs" />
     <Compile Include="Classes\ListLoader.cs" />
+    <Compile Include="Info.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
