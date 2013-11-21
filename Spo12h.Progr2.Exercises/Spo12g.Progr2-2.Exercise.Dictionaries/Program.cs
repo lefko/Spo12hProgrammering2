@@ -60,6 +60,7 @@ namespace Spo12g.Progr2_2.Exercise.Dictionaries
             Console.WriteLine("Letter Count Application");
             Console.WriteLine("------------------------");
             Console.WriteLine();
+            
         }
 
         static string getInput()
