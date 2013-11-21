@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spo12h.Progr2.Exercise15", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spo12h.Progr2-2.Exercise2", "Spo12h.Progr2-2.Exercise2\Spo12h.Progr2-2.Exercise2.csproj", "{736AA664-17F6-4DB2-836F-07AA0DB047A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spo12g.Progr2-2.Exercise.Dictionaries", "Spo12g.Progr2-2.Exercise.Dictionaries\Spo12g.Progr2-2.Exercise.Dictionaries.csproj", "{07BB8938-C345-4F8A-A7CD-97F270FAF0A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{736AA664-17F6-4DB2-836F-07AA0DB047A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{736AA664-17F6-4DB2-836F-07AA0DB047A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{736AA664-17F6-4DB2-836F-07AA0DB047A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07BB8938-C345-4F8A-A7CD-97F270FAF0A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07BB8938-C345-4F8A-A7CD-97F270FAF0A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07BB8938-C345-4F8A-A7CD-97F270FAF0A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07BB8938-C345-4F8A-A7CD-97F270FAF0A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
