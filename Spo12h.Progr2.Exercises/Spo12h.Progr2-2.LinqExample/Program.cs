@@ -43,8 +43,6 @@ namespace Spo12h.Progr2_2.LinqExample
                 Console.WriteLine(city);
             }
 
-            
-
             Console.ReadLine();
         }
     }
