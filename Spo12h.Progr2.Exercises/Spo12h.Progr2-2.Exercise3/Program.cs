@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using Spo12h.Progr2_2.Exercise3.Classes;
@@ -41,11 +42,13 @@ namespace Spo12h.Progr2_2.Exercise3
 
         static IEnumerable<string> ExecuteSearch(ListLoader list, string searchTerm)
         {
-            var searchResult = from l in list.languageList
-                                    where l.ToLower().Contains(searchTerm.ToLower())
-                                    select l;
+            searchTerm = searchTerm.ToLower();
+            return  from l in list.languageList
+                    where l.ToLower().Contains(searchTerm)
+                    select l;
 
-            return searchResult;
+            //return searchResult;
+
         }
 
         static void PrintResult(IEnumerable<string> results)
