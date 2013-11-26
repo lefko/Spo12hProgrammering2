@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spo12h.Progr2-2.LinqExample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spo12h.Progr2-2.Exercise9", "Spo12h.Progr2-2.Exercise9\Spo12h.Progr2-2.Exercise9.csproj", "{5736D92B-28C9-47E7-ADC7-ECD133304378}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spo12h-Progr2-2.Exercise10", "Spo12h-Progr2-2.Exercise10\Spo12h-Progr2-2.Exercise10.csproj", "{D1DAD02E-8B78-461C-BE87-9308FCFFFEB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{5736D92B-28C9-47E7-ADC7-ECD133304378}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5736D92B-28C9-47E7-ADC7-ECD133304378}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5736D92B-28C9-47E7-ADC7-ECD133304378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1DAD02E-8B78-461C-BE87-9308FCFFFEB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1DAD02E-8B78-461C-BE87-9308FCFFFEB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1DAD02E-8B78-461C-BE87-9308FCFFFEB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1DAD02E-8B78-461C-BE87-9308FCFFFEB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
